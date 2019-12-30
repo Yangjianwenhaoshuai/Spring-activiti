@@ -5,9 +5,10 @@ import java.util.List;
 import boot.spring.po.Role;
 import boot.spring.po.Role_permission;
 import boot.spring.po.User_role;
+import org.apache.ibatis.annotations.Mapper;
 
 
-
+@Mapper
 public interface RoleMapper {
 	List<Role> getRoles();
 	void adduserrole(User_role ur);

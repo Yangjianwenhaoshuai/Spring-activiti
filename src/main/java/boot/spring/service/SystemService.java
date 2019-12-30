@@ -6,8 +6,9 @@ import boot.spring.po.Permission;
 import boot.spring.po.Role;
 import boot.spring.po.User;
 import boot.spring.po.UserRole;
+import org.springframework.stereotype.Service;
 
-
+@Service
 public interface SystemService {
 	List<User> getallusers();
 	List<User> getpageusers(int pagenum, int pagesize);

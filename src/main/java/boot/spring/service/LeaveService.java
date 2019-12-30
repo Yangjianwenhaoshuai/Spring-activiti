@@ -8,8 +8,10 @@ import org.activiti.engine.impl.persistence.entity.ProcessDefinitionEntity;
 import org.activiti.engine.runtime.ProcessInstance;
 
 import boot.spring.po.LeaveApply;
+import org.springframework.stereotype.Service;
 
 
+@Service
 public interface LeaveService {
 	public ProcessInstance startWorkflow(LeaveApply apply,String userid,Map<String,Object> variables);
 	public List<LeaveApply> getpagedepttask(String userid,int firstrow,int rowcount);

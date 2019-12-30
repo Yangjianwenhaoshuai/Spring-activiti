@@ -4,7 +4,9 @@ import java.util.Map;
 import org.activiti.engine.runtime.ProcessInstance;
 
 import boot.spring.po.PurchaseApply;
+import org.springframework.stereotype.Service;
 
+@Service
 public interface PurchaseService {
 	public ProcessInstance startWorkflow(PurchaseApply apply,String userid,Map<String,Object> variables);
 	PurchaseApply getPurchase(int id);

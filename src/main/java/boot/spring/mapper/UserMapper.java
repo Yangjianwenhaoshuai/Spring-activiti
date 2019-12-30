@@ -3,7 +3,9 @@ package boot.spring.mapper;
 import java.util.List;
 
 import boot.spring.po.User;
+import org.apache.ibatis.annotations.Mapper;
 
+@Mapper
 public interface UserMapper {
 	List<User> getusers();
 
